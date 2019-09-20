@@ -12,10 +12,15 @@ li{
 	padding:.5rem;
 }
 
+img{
+	max-width: 100%;
+}
 
+footer{
+	font-size: .5rem;
+}
 
-
-
-.GradPhoto{
-	max-width: 1rem;
+nav{
+	background-color: bisque;
+	padding: 1rem;
 }
