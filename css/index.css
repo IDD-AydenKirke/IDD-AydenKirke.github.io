@@ -1,14 +1,43 @@
+
+/*** BACKGROUND COLOURS***/
+html{
+	--primary-a:#6200ee;
+	--primary-b:#3700b3;
+	--secondary-a:#03dac6;
+	--secondary-b:#018786;
+	--background:#ffffff;
+	--error:#b00020;
+
+/*** Foreground colour***/
+	--on-primary:#ffffff;
+	--on-secondary:#000000;
+	--on-background:#222222;
+	--on-error:#ffffff;
+
+	/*** Font sets***/
+	--font-body:Arial, Helvetica, sans-serif;
+	--font-impact:georgia, serif;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	font: 2em var(--font-impact);
+
+}
+
 body {
-	background-color: tomato;
+	background-color:var(--background);
+	color:var(--on-background);
 	font-weight: normal;
 	font-style: normal;
 	font-size: 1rem;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-body)
 }
 
 li{
 	display: inline-block;
-	background-color: aliceblue;
+	background-color: var(--primary-a);
+	color:var(--on-primary);
 	padding:.5rem;
 }
 
@@ -17,10 +46,22 @@ img{
 }
 
 footer{
+	background-color:var(--secondary-a);
 	font-size: .5rem;
 }
 
 nav{
-	background-color: bisque;
+	background-color:var(--secondary-a);
 	padding: 1rem;
+	color:var(--on-secondary);
+}
+.upper{
+	text-transform: uppercase;
+}
+.underline{
+	border-bottom: .25em solid var(--on-background);
+}
+
+.center{
+	text-align: center;
 }
