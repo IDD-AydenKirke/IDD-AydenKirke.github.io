@@ -1,18 +1,18 @@
-
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
 /*** BACKGROUND COLOURS***/
 html{
-	--primary-a:#6200ee;
-	--primary-b:#3700b3;
-	--secondary-a:#03dac6;
-	--secondary-b:#018786;
-	--background:#ffffff;
+	--primary-a:#AB47BC;
+	--primary-b:#8E24AA;
+	--secondary-a:#4e03da;
+	--secondary-b:#7b5bee;
+	--background:rgb(235, 233, 233);
 	--error:#b00020;
 
 /*** Foreground colour***/
-	--on-primary:#ffffff;
+	--on-primary:#1a0272;
 	--on-secondary:#000000;
 	--on-background:#222222;
-	--on-error:#ffffff;
+	--on-error:#9c48eb;
 
 	/*** Font sets***/
 	--font-body:Arial, Helvetica, sans-serif;
@@ -21,8 +21,12 @@ html{
 
 
 h1,h2,h3,h4,h5,h6{
-	font: 2em var(--font-impact);
+	font: 2em 'Patua One';
+	padding: .75em;
+}
 
+p{
+	padding:.75em;
 }
 
 body {
@@ -35,7 +39,6 @@ body {
 }
 
 li{
-	display: inline-block;
 	background-color: var(--primary-a);
 	color:var(--on-primary);
 	padding:.5rem;
@@ -46,22 +49,40 @@ img{
 }
 
 footer{
-	background-color:var(--secondary-a);
+	background-color:var(--secondary-b);
+	color:var(--on-secondary);
 	font-size: .5rem;
 }
 
 nav{
-	background-color:var(--secondary-a);
+	background-color:var(--secondary-b);
 	padding: 1rem;
 	color:var(--on-secondary);
 }
+
+p{
+	padding: .5em
+}
+
+a{
+	text-decoration: none;
+	color: var(--on-primary);
+}
+
+a:hover{
+	text-decoration: underline;
+}
 .upper{
 	text-transform: uppercase;
+	text-decoration: underline;
 }
-.underline{
-	border-bottom: .25em solid var(--on-background);
-}
+
 
 .center{
 	text-align: center;
 }
+
+.border{
+	border: .25em solid var(--secondary-a);
+}
+
